@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Escolha de Turmas</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <h1>Plataforma do Professor</h1>
+    <h3>Escolha as atividades</h3>
+
+    <div class="box">
+
+      <div class="form-box"> 
+        <form action="/escolha_atividade" method="post">
+          
+          <h6>Para escolher uma atividade, coloque o código da turma e o código da atividade correspondente</h6>
+
+          <div class="inputs-boxs">
+              <label for="codigoTurma">Código da Turma</label>
+              <input type="number" name="codigoTurma" id="codigoTurma" placeholder="Escreva o codigo da turma" style="margin-bottom: 20px;">
+
+              <label for="codigoAtv">Código da Atividade</label>
+              <input type="text" name="codigoAtv" id="codigoAtv" placeholder="Escreva o codigo da atividade"><br>
+          </div>
+
+          <button type="submit" class="submit-btn" style="margin-top: 30px;">Confirmar</button>
+        </form>
+    </div>
+
+    <div class="form-box">
+      <h6 style="margin-bottom: 25px;">
+        Verifique aqui as turmas e atividades disponíveis
+      </h6>
+
+      <h6 style="margin: 2px 0 2px 0;">Turmas: </h6>
+      <p class="turmas">
+        {turmas}
+      </p>
+
+      <br>
+
+      <h6 style="margin: 2px 0 2px 0;">Atividades: </h6>
+      <p class="turmas">
+        {atividades}
+      </p> 
+    </div>
+
+  </div>
+
+  </body>
+</html> 

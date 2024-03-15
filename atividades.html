@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Atividades</title>
+</head>
+<body>
+    
+    <h1>Plataforma do Professor</h1>
+    <h3>Cadastro de Atividades</h3>
+    
+    <div class="form-box2" style="margin-top: 50px;">
+        <form action="/cad_atividade" method="post">
+
+            <h6>Para cadastrar uma atividade, coloque a turma responsável por esta atividade, o código e a descrição da atividade</h6>
+
+            <div class="inputs-boxs">
+                <label for="codigo_atv">Código da Atividade</label>
+                <input type="text" name="codigo_atv" id="codigo_atv" placeholder="Escreva o código da turma" style="margin-bottom: 20px;"><br>
+        
+                <label for="codigo">Descrição</label>
+                <input type="text" name="descricao" id="descricao" placeholder="Escreva a descrição da turma">
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </div>
+
+
+    <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
